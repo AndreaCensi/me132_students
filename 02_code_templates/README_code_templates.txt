@@ -27,8 +27,8 @@ Running the examples
 --------------------
 
 Here we assume that you have successfully compiled/installed your
-C++/Python client, so that you have an executable "my_client" (or
-"./my_client" if you just compiled but didn't install).
+C++/Python client, so that you have an executable "my_cpp_client" 
+or "my_python_client".
 
 To run the examples, you have to first start the stage simulator,
 then your client. It helps if you use two different terminals.
@@ -44,7 +44,6 @@ several other robots at the bottom of the screen.
 
 Leave that open, and in another window write:
 
-    $ my_client -p $MY_PORT_NUMBER
+    $ my_cpp_client -p $MY_PORT_NUMBER
 
-
-Now you should be seeing Johnny5 going around in circles!
+Now you should be seeing the robot going around in circles.

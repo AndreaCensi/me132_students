@@ -31,7 +31,7 @@ Unpack, create build directory:
     
 Compile and install:
 
-    $ cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/player-env -DBUILD_PYTHONC_BINDINGS=ON  -DBUILD_PYTHONCPP_BINDINGS=ON 
+    $ cmake .. -DBUILD_PYTHONC_BINDINGS=ON  -DBUILD_PYTHONCPP_BINDINGS=ON 
     $ make
     $ sudo make install
 
