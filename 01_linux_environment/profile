@@ -3,4 +3,4 @@ export player_install=/usr/local
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${player_install}/lib
 export PKG_CONFIG_PATH=${player_install}/lib/pkgconfig:${PKG_CONFIG_PATH}
 
-export MY_PORT_NUMBER=6666
+export MY_PORT_NUMBER=ask_the_tas_for_the_number
