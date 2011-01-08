@@ -32,19 +32,3 @@ You can also just go to
     http://github.com/AndreaCensi/me132_students
     
 and download single files manually.
-
-
-
-References
-----------
-
-
-Player 
-
-Player tutorials
-
-
-GIT
-
-
-(add)
