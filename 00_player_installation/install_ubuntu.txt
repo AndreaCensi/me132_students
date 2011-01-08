@@ -9,11 +9,11 @@ Installing dependencies
 
 Miscellaneous packages for development:
 
-    $ sudo apt-get install g++ build-essential libcairo2-dev libgsl0-dev subversion git-core libtool
+    $ sudo apt-get install g++ build-essential libcairo2-dev libgsl0-dev subversion git-core libtool  
 
 Prerequisites for Player:
 
-    $ sudo apt-get install cmake libhighgui-dev libraw1394-dev libdc1394-22-dev libcv4 libcv-dev libcvaux4 libcvaux-dev  libgnomecanvas2-dev python-opencv 
+    $ sudo apt-get install cmake libhighgui-dev libraw1394-dev libdc1394-22-dev libcv4 libcv-dev libcvaux4 libcvaux-dev  libgnomecanvas2-dev python-opencv libxmu-dev swig libboost-all-dev
 
 
 Prerequisites for Stage:
@@ -38,7 +38,7 @@ Unpack, create build directory:
     
 Compile and install:
 
-    $ cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/player-env -DBUILD_PYTHONC_BINDINGS=ON -DBUILD_PYTHONCPP_BINDINGS=ON 
+    $ cmake .. -DBUILD_PYTHONC_BINDINGS=ON -DBUILD_PYTHONCPP_BINDINGS=ON 
     $ make
     $ sudo make install
 

@@ -25,12 +25,14 @@ The sequence of commands is as follows:
 1) Read the CMakeLists.txt and create a Makefile:
 
        $ cmake .    
+       
 
 2) Compile the program.
 
        $ make
     
-
+   You should now see an executable "my_cpp_client".
+   
 
 Using a script
 ^^^^^^^^^^^^^^
