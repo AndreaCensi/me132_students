@@ -1,0 +1,56 @@
+Installing Stage/Player on Ubuntu
+=================================
+
+These are my notes while installing Stage/Player on Ubuntu 10.04.
+
+
+Installing dependencies
+-----------------------
+
+Miscellaneous packages for development:
+
+    $ sudo apt-get install g++ build-essential libcairo2-dev libgsl0-dev subversion git-core libtool
+
+Prerequisites for Player:
+
+    $ sudo apt-get install cmake libhighgui-dev libraw1394-dev libdc1394-22-dev libcv4 libcv-dev libcvaux4 libcvaux-dev  libgnomecanvas2-dev python-opencv 
+
+
+Prerequisites for Stage:
+
+    $ sudo apt-get install libfltk-dev libglu-dev
+
+
+
+Installing Player
+-----------------
+
+Download from Sourceforge:
+    
+    http://sourceforge.net/projects/playerstage/files/Player/3.0.2/player-3.0.2.tar.gz/download
+
+Unpack, create build directory:
+
+    $ tar xvzf player-3.0.2.tar.gz
+    $ cd player
+    $ mkdir build
+    $ cd build
+    
+Compile and install:
+
+    $ cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/player-env -DBUILD_PYTHONC_BINDINGS=ON -DBUILD_PYTHONCPP_BINDINGS=ON 
+    $ make
+    $ sudo make install
+
+
+Installing Stage
+-----------------
+
+Download from GitHub:
+
+    https://github.com/downloads/rtv/Stage/Stage-4.0.0-src.tar.gz
+    
+    
+
+
+

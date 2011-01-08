@@ -1,0 +1,37 @@
+Installing Stage/Player on OS X
+===============================
+
+It's trickier than for Ubuntu, but possible
+
+
+Install dependencies
+--------------------
+
+Install required packages using MacPorts (www.macports.org/)
+
+
+    $ sudo port install gtk2 libgnomecanvas gsl-devel
+
+
+
+
+Install Player
+--------------
+
+Download from Sourceforge:
+    
+    http://sourceforge.net/projects/playerstage/files/Player/3.0.2/player-3.0.2.tar.gz/download
+
+Unpack, create build directory:
+
+    $ tar xvzf player-3.0.2.tar.gz
+    $ cd player
+    $ mkdir build
+    $ cd build
+    
+Compile and install:
+
+    $ cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/player-env -DBUILD_PYTHONC_BINDINGS=ON  -DBUILD_PYTHONCPP_BINDINGS=ON 
+    $ make
+    $ sudo make install
+

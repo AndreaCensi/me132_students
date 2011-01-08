@@ -1,6 +1,15 @@
-
-export player_install=/usr/local
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${player_install}/lib
-export PKG_CONFIG_PATH=${player_install}/lib/pkgconfig:${PKG_CONFIG_PATH}
+#### Personal settings
 
 export MY_PORT_NUMBER=ask_the_tas_for_the_number
+
+#### Settings common for everybody
+
+# Without these, you won't be able to compile the samples
+export player_install=/usr/local
+export PKG_CONFIG_PATH=${player_install}/lib/pkgconfig:${PKG_CONFIG_PATH}
+
+# Without this, "stage" will not run properly.
+export LD_LIBRARY_PATH=${player_install}/lib:${LD_LIBRARY_PATH}
+
+# Without these
+export PYTHONPATH=${player_install}/lib/python2.6/site-packages:${PYTHONPATH}

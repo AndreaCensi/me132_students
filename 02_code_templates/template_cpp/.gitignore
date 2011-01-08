@@ -1,0 +1,6 @@
+Makefile
+cmake_install.cmake
+my_client
+CMakeCache.txt
+CMakeFiles
+my_cpp_client

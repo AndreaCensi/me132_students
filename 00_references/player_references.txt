@@ -1,0 +1,6 @@
+Docs
+----
+
+http://www-users.cs.york.ac.uk/~jowen/player/playerstage-manual.html
+http://www-users.cs.york.ac.uk/~jowen/player/playerstage-tutorial-manual.pdf
+
