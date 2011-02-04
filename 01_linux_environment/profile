@@ -11,6 +11,4 @@ export PKG_CONFIG_PATH=${player_install}/lib/pkgconfig:${PKG_CONFIG_PATH}
 # Without this, "stage" will not run properly.
 export LD_LIBRARY_PATH=${player_install}/lib:${LD_LIBRARY_PATH}
 
-# Without these
-export PYTHONPATH=${player_install}/lib/python2.6/site-packages:${PYTHONPATH}
 
