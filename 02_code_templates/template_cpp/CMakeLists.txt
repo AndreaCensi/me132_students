@@ -18,12 +18,18 @@ endif(player_install)
 set(CMAKE_MODULE_PATH ${player_install}/share/cmake/Modules)
 INCLUDE (UsePlayerC++)
 
+set(COMMON src/cmdline_parsing.cc src/common_functions.cc)
+ 
+PLAYER_ADD_PLAYERCPP_CLIENT(me132_tutorial_0 
+    SOURCES src/me132_tutorial_0.cc ${COMMON}
+    LIBDIRS ""
+    LIBFLAGS ""
+    CFLAGS  ""
+    INCLUDEDIRS ""
+    )
 
-# Create the "my_client" program 
-# from basic_client.cc and my_functions.cc
-
-PLAYER_ADD_PLAYERCPP_CLIENT(my_cpp_client 
-    SOURCES src/basic_client.cc src/cmdline_parsing.cc src/my_functions.cc
+PLAYER_ADD_PLAYERCPP_CLIENT(me132_tutorial_1 
+    SOURCES src/me132_tutorial_1.cc ${COMMON}
     LIBDIRS ""
     LIBFLAGS ""
     CFLAGS  ""

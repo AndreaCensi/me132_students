@@ -3,9 +3,14 @@ set -e # stop on errors (always include this in your scripts)
 set -x # echo commands 
 
 
-sources="src/my_functions.cc src/cmdline_parsing.cc src/basic_client.cc"
-
 # Note this assumes that PKG_CONFIG_PATH is setup correctly
 libraries=`pkg-config --cflags --libs playerc++`
 
-g++  ${libraries} ${sources} -o my_cpp_client
+common="src/common_functions.cc src/cmdline_parsing.cc"
+
+sources="${common} src/me132_tutorial_0.cc"
+g++  ${libraries} ${sources} -o me132_tutorial_0
+
+
+sources="${common} src/me132_tutorial_1.cc"
+g++  ${libraries} ${sources} -o me132_tutorial_1
