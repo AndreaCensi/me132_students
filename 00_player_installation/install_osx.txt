@@ -1,7 +1,7 @@
 Installing Stage/Player on OS X
 ===============================
 
-It's trickier than for Ubuntu, but possible
+It's trickier than for Ubuntu, but possible.
 
 
 Install dependencies
